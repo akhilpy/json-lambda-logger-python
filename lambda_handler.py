@@ -9,7 +9,7 @@ sqs_url =os.environ.get('sqs_url')
      
 args =["source", "api_id"] #optional
 
-@setup_logging(*args)
+@SetupLogging(*args)
 def lambda_handler(event, context, log_dict=None, logger=None):
     
     log_dict['api_id'] =event.get('requestContext')['requestId'] if event.get('requestContext') else None
