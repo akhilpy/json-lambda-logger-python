@@ -3,7 +3,7 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 from pythonjsonlogger import jsonlogger
 
-class setup_logging(object):
+class SetupLogging(object):
     
     formatter = '%(asctime)s %(levelname)s %(pathname)s %(lineno)d %(message)s'
     
