@@ -2,7 +2,7 @@ import json
 import boto3
 import os
 import logging
-from setup_logger import setup_logging
+from setup_logger import SetupLogging
 sqs_client =boto3.client('sqs')
 auth_token = os.environ.get('token')
 sqs_url =os.environ.get('sqs_url')
